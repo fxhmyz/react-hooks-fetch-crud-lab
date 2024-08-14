@@ -1,10 +1,10 @@
-import React from "react";
+import React from 'react';
 
-function AdminNavBar({ onChangePage }) {
+function AdminNavBar({ onToggleForm }) {
   return (
     <nav>
-      <button onClick={() => onChangePage("Form")}>New Question</button>
-      <button onClick={() => onChangePage("List")}>View Questions</button>
+      <button onClick={onToggleForm}>New Question</button>
+      <button>View Questions</button>
     </nav>
   );
 }
